@@ -4,10 +4,7 @@ Aula de Algoritmos e Estrutura de Dados I - 09/10 - CONJUNTOS
 ## 💿 Consumindo a API do PrimeVideo com Python 🐍
 
 **Doc: https://realpython.com/python-sets/**
-
-**Pra instalar o Requests:**
-
-`` python -m pip install requests `` 
+**Repo da API de filmes que criei: https://github.com/CarolinaSFreitas/DSA-Aula2-1808**
 
 ### Esse programa (primevideo.py) faz:
 
@@ -20,10 +17,10 @@ Cadastro de Filmes - PrimeVideo
 5. Finalizar
 Opção: <opcao>
 
-**Repo da API de filmes que criei:**
-https://github.com/CarolinaSFreitas/DSA-Aula2-1808
-
 ### Lembrando que:
+
+**Pra instalar o Requests:**
+`` python -m pip install requests `` 
 
 **Pra iniciar a API**:
 1. `` npm init -y ``

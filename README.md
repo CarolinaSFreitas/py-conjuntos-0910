@@ -12,6 +12,17 @@ Aula de Algoritmos e Estrutura de Dados I - 09/10 - CONJUNTOS
 **Repo da API de filmes que criei:**
 https://github.com/CarolinaSFreitas/DSA-Aula2-1808
 
+### Esse programa faz:
+
+Cadastro de Filmes - PrimeVideo
+----------------------------------------
+1. Inclusão de Filmes
+2. Listagem de Filmes
+3. Agrupar por Gênero
+4. Pesquisar por Palavras Chave
+5. Finalizar
+Opção: <opcao>
+
 ### Lembrando que:
 
 **Pra iniciar a API**:
@@ -21,5 +32,3 @@ https://github.com/CarolinaSFreitas/DSA-Aula2-1808
 4. `` npx nodemon app ``
 5. No VS, criar um "app.js" como o arquivo do repo
 6. ⚠️ Alterar o "package.json", adicionando a linha `` "type": "module", `` após a linha de "main": "index.js","
-
-

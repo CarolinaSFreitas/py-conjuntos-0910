@@ -5,6 +5,11 @@ Aula de Algoritmos e Estrutura de Dados I - 09/10 - CONJUNTOS
 
 **Doc: https://realpython.com/python-sets/**
 
+**Pra instalar o Requests:**
+
+`` python -m pip install requests `` 
+
+
 ### Lembrando que:
 
 **Pra iniciar a API**:

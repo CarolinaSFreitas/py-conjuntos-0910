@@ -4,6 +4,7 @@ Aula de Algoritmos e Estrutura de Dados I - 09/10 - CONJUNTOS
 ## 💿 Consumindo a API do PrimeVideo com Python 🐍
 
 **Doc: https://realpython.com/python-sets/**
+
 **Repo da API de filmes que criei: https://github.com/CarolinaSFreitas/DSA-Aula2-1808**
 
 ### Esse programa (primevideo.py) faz:

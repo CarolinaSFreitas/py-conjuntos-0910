@@ -1,6 +1,8 @@
 # Conjuntos | Python + API PrimeVideo feita com Sequelize e Express
 Aula de Algoritmos e Estrutura de Dados I - 09/10 - CONJUNTOS
 
+## 💿 Consumindo a API do PrimeVideo com Python 🐍
+
 **Doc: https://realpython.com/python-sets/**
 
 ### Lembrando que:

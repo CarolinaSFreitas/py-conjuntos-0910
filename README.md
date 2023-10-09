@@ -9,6 +9,8 @@ Aula de Algoritmos e Estrutura de Dados I - 09/10 - CONJUNTOS
 
 `` python -m pip install requests `` 
 
+**Repo da API de filmes que criei:**
+https://github.com/CarolinaSFreitas/DSA-Aula2-1808
 
 ### Lembrando que:
 

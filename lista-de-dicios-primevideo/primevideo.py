@@ -31,15 +31,93 @@ def incluir():
 
 #função de listagem - get
 def listar():
-    pass
+    titulo("Listagem de Filmes")
 
-#função de agrupamento - get 
+    response = requests.get(url_api)
+    
+    if response.status_code == 200:
+        filmes = response.json()
+        for filme in filmes:
+            print(f"ID: {filme['id']}")
+            print(f"Título: {filme['titulo']}")
+            print(f"Gênero: {filme['genero']}")
+            print(f"Duração: {filme['duracao']} min")
+            print(f"Preço: R$ {filme['preco']}")
+            datalan = filme['datalan'].split("-")
+            dataformatada = datalan[2] + "/" + datalan[1] + "/" + datalan[0]
+            print(f"Lançamento: {dataformatada}")
+            print("-*" * 20)
+    else:
+        print("Erro... Não foi possível listar os filmes :(")
+
+#função de agrupamento por gênero - get 
 def agrupar():
-    pass
+    titulo("Agrupamento de Filmes por Gênero")
 
-#função de agrupamento - get
+    response = requests.get(url_api)
+
+    if response.status_code == 200:
+        filmes = response.json()
+        generos_filmes = {}  # dicio q armazena os filmes agrupados por gênero
+
+        for filme in filmes:
+            genero = filme['genero']
+
+            # verifica genero
+            if genero in generos_filmes:
+                generos_filmes[genero].append(filme)
+            else:
+                generos_filmes[genero] = [filme]
+
+        # exibe os filmes agrupados por genero
+        for genero, filmes_do_genero in generos_filmes.items():
+            titulo(f"Filmes do Gênero: {genero}")
+            for filme in filmes_do_genero:
+                print(f"ID: {filme['id']}")
+                print(f"Título: {filme['titulo']}")
+                print(f"Duração: {filme['duracao']} min")
+                print(f"Preço: R$ {filme['preco']}")
+                datalan = filme['datalan'].split("-")
+                dataformatada = datalan[2] + "/" + datalan[1] + "/" + datalan[0]
+                print(f"Lançamento: {dataformatada}")
+                print("-" * 40)
+    else:
+        print("Erro... Não foi possível listar os filmes por gênero :(")
+
+
+#função de pesquisa por palavra chave = titulo - get
 def pesquisar():
-    pass
+    titulo("Pesquisa por Título e/ou Gênero")
+
+    palavra_chave = input("Digite a palavra-chave (Título ou Gênero): ")
+
+    response = requests.get(url_api)
+
+    if response.status_code == 200:
+        filmes = response.json()
+        resultados = []  # lista p armazenar os filmes correspondentes a pesquisa
+
+        for filme in filmes:
+            if (palavra_chave.lower() in filme['titulo'].lower()) or (palavra_chave.lower() in filme['genero'].lower()):
+                resultados.append(filme)
+
+        if resultados:
+            print(f"Resultados da pesquisa para '{palavra_chave}':")
+            for filme in resultados:
+                print(f"ID: {filme['id']}")
+                print(f"Título: {filme['titulo']}")
+                print(f"Gênero: {filme['genero']}")
+                print(f"Duração: {filme['duracao']} min")
+                print(f"Preço: R$ {filme['preco']}")
+                datalan = filme['datalan'].split("-")
+                dataformatada = datalan[2] + "/" + datalan[1] + "/" + datalan[0]
+                print(f"Lançamento: {dataformatada}")
+                print("-" * 40)
+        else:
+            print(f"Nenhum filme encontrado com a palavra-chave '{palavra_chave}'.")
+    else:
+        print("Erro... Não foi possível encontrar os filmes :(")
+
 
 # -------------------------------------------------- Programa Principal
 while True:

@@ -9,10 +9,7 @@ Aula de Algoritmos e Estrutura de Dados I - 09/10 - CONJUNTOS
 
 `` python -m pip install requests `` 
 
-**Repo da API de filmes que criei:**
-https://github.com/CarolinaSFreitas/DSA-Aula2-1808
-
-### Esse programa faz:
+### Esse programa (primevideo.py) faz:
 
 Cadastro de Filmes - PrimeVideo
 ----------------------------------------
@@ -22,6 +19,9 @@ Cadastro de Filmes - PrimeVideo
 4. Pesquisar por Palavras Chave
 5. Finalizar
 Opção: <opcao>
+
+**Repo da API de filmes que criei:**
+https://github.com/CarolinaSFreitas/DSA-Aula2-1808
 
 ### Lembrando que:
 

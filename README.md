@@ -7,7 +7,7 @@ Aula de Algoritmos e Estrutura de Dados I - 09/10 - CONJUNTOS
 
 ### Lembrando que:
 
-**Pra iniciar**:
+**Pra iniciar a API**:
 1. `` npm init -y ``
 2. `` npm i express sequelize mysql2 cors ``
 3. `` npm i --save-dev nodemon ``

@@ -1,0 +1,19 @@
+
+ExercÃ­cios sobre conjuntos
+--------------------------
+- Elaborar um programa para manipular conjuntos de letras e exiba o seguinte menu:
+1. Ler 2 nomes completos de alunos
+2. Mostrar IntersecÃ§Ã£o das letras 
+3. Mostrar SubtraÃ§Ã£o (A-B e B-A)
+4. Mostrar UniÃ£o (A+B)
+5. Mostrar Letras do Alfabeto que nÃ£o constam nos nomes
+6. Sair
+
+Em todas as opÃ§Ãµes de listagem, exibir as letras em ordem alfabÃ©tica
+
+
+- Acrescentar opÃ§Ã£o no programa de consumo da API de filmes que faÃ§a uma pesquisa
+  por palavras chaves que manipule conjuntos. A rotina deve ler um conjunto de 
+  palavras chave, por exemplo, INDIANA JONES CRUZADA. O programa deve exibir, 
+  primeiro os filmes que contÃ©m todas as palavras; apÃ³s, os que contÃ©m uma ou 
+  mais palavras do tÃ­tulo do filme.

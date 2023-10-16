@@ -58,15 +58,44 @@ def interseccao():
 
 
 def diferenca():
-    pass
+    titulo("Diferença de Letras Entre os Nomes")
+
+    #so1 = nome1 & nome2
+    so1 = nome1.difference(nome2)
+    so2 = nome2.difference(nome1)
+
+    #converte em lista (e já ordena)
+    lista1 = sorted(list(so1))
+    lista2 = sorted(list(so2))
+
+    print(f"Só existe no 1º nome: {lista1}")
+    print(f"Só existe no 2º nome: {lista2}")
 
 
 def uniao():
-    pass
+    titulo("União das Letras dos Nomes")
+
+    # uniao = nome1 | nome2
+    uniao = nome1.union(nome2)
+    
+    #converte em lista (e já ordena)
+    lista = sorted(list(uniao))
+
+    print(f"Todas as Letras dos Nomes: {lista}")
 
 
 def alfabeto():
-    pass
+    titulo("Letras do Alfabeto Ausentes nos Nomes")
+
+    alfabeto = set(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'])
+
+    #outra forma: ausentes = alfabeto - (nome1 | nome2)
+    ausentes = alfabeto.difference(nome1.union(nome2))
+
+    #converte em lista (e já ordena)
+    lista = sorted(list(ausentes))
+
+    print(F"Letras Ausentes nos Nomes: {lista}")
 
 #--------------------------------------------------------------------programa principal
 while True:

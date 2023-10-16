@@ -31,22 +31,30 @@ def inclusao():
    #for letra in aux1:
     #    nome1.add(letra)
 
+    aux1 = aux1.lower().replace(" ", "")        #converte p minuscula e tira os espaços dos nomes q podem vir no conjunto de intersec
+    aux2 = aux2.lower().replace(" ", "")        #converte p minuscula e tira os espaços dos nomes q podem vir no conjunto de intersec
+
     global nome1
     global nome2
-    nome1 = set(aux1.lower())
-    nome2 = set(aux2.lower())
+    nome1 = set(aux1)
+    nome2 = set(aux2)
     print("Ok! Nomes cadastrados com sucesso :)")
 
 
 def interseccao():
     titulo("Intersecção das Letras dos Nomes")
 
+    #outra opçao: intersect = nome1 & nome2
     intersect = nome1.intersection(nome2)
-    print("")
 
+    #converte em lista (e já ordena)
+    lista = sorted(list(intersect))
 
+    #outras formas:
+    #lista.sort()            #classifica a própria lista
+    #lista2 = sorted(lista)  #mantem a lista original e cria outra classificada
 
-
+    print(f"Letras Comuns: {lista}")
 
 
 def diferenca():
